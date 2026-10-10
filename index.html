@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal & Compliance Portal | AquaHarvX</title>
+    <style>
+        :root {
+            --primary: #0A2540;
+            --primary-light: #1E3A5F;
+            --accent: #00A389;
+            --accent-hover: #00826D;
+            --warning-bg: #FEF3C7;
+            --warning-border: #F59E0B;
+            --warning-text: #92400E;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 3.5rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            color: #CBD5E1;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background-color: white;
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #E2E8F0;
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Mandatory Developer Non-Liability Banner */
+        .developer-disclaimer-banner {
+            background-color: var(--warning-bg);
+            border-left: 6px solid var(--warning-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+        }
+
+        .developer-disclaimer-banner h3 {
+            color: var(--warning-text);
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .developer-disclaimer-banner p {
+            color: #78350F;
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h2 {
+            color: var(--primary);
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .card p {
+            color: #475569;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 700;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .contact-card {
+            background-color: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            background-color: white;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AquaHarvX</h1>
+    <p>Official Legal, Privacy & Compliance Information</p>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Overview</a>
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="privacy.html">Privacy Policy</a>
+</nav>
+
+<div class="container">
+
+    <!-- MANDATORY DEVELOPER NON-LIABILITY BANNER -->
+    <div class="developer-disclaimer-banner">
+        <h3>⚠️ Mandatory Legal & Developer Notice</h3>
+        <p>The independent developer who developed and deployed this application is not liable for any legal claims, damages, or compliance issues related to your use of the app. All legal and operational responsibilities, including compliance with applicable laws, rest exclusively with AquaHarvX (SIDDHIE ARUMUGAA TRADERS).</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div>
+                <div class="card-icon">📜</div>
+                <h2>Terms and Conditions</h2>
+                <p>Read the Terms of Service governing the use of AquaHarvX, trade listings, buyer offers, market pricing reference, and platform intermediary disclaimers.</p>
+            </div>
+            <a href="terms.html" class="btn">View Terms & Conditions &rarr;</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-icon">🛡️</div>
+                <h2>Privacy Policy</h2>
+                <p>Learn how AquaHarvX handles your data in compliance with the Digital Personal Data Protection Act, 2023 (DPDP Act) and Google Play Store Developer Policies.</p>
+            </div>
+            <a href="privacy.html" class="btn">View Privacy Policy &rarr;</a>
+        </div>
+    </div>
+
+    <div class="contact-card">
+        <h2 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 0.75rem;">🏢 Platform Ownership & Contact Details</h2>
+        <p style="color: #475569; margin-bottom: 1rem;">AquaHarvX is owned, managed, and operated exclusively by <strong>SIDDHIE ARUMUGAA TRADERS</strong>.</p>
+        <p><strong>Grievance Officer:</strong> AquaHarvX Grievance Redressal</p>
+        <p>📧 Email: <a href="mailto:aquaharvx@gmail.com" style="color: var(--accent); font-weight: 600;">aquaharvx@gmail.com</a></p>
+        <p>📞 Phone: <a href="tel:+919346122889" style="color: var(--accent); font-weight: 600;">+91 9346122889</a></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 AquaHarvX (SIDDHIE ARUMUGAA TRADERS). All rights reserved.</p>
+    <p style="margin-top: 0.5rem;"><a href="terms.html">Terms & Conditions</a> &bull; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | AquaHarvX</title>
+    <style>
+        :root {
+            --primary: #0A2540;
+            --primary-light: #1E3A5F;
+            --accent: #00A389;
+            --accent-hover: #00826D;
+            --warning-bg: #FEF3C7;
+            --warning-border: #F59E0B;
+            --warning-text: #92400E;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            color: #CBD5E1;
+            font-size: 1rem;
+        }
+
+        nav {
+            background-color: white;
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #E2E8F0;
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Mandatory Developer Non-Liability Banner */
+        .developer-disclaimer-banner {
+            background-color: var(--warning-bg);
+            border-left: 6px solid var(--warning-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+        }
+
+        .developer-disclaimer-banner h3 {
+            color: var(--warning-text);
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .developer-disclaimer-banner p {
+            color: #78350F;
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #F1F5F9;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p, ul, ol {
+            margin-bottom: 1rem;
+            color: #334155;
+            font-size: 1rem;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--primary);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #E6FFFA;
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.25rem 0.6rem;
+            border-radius: 9999px;
+            border: 1px solid #B2F5EA;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-box {
+            background-color: #F0FDF4;
+            border: 1px solid #BBF7D0;
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1.25rem 0;
+        }
+
+        .contact-box {
+            background-color: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            background-color: white;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            header h1 { font-size: 1.7rem; }
+            .card { padding: 1.5rem; }
+            nav { flex-wrap: wrap; gap: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AquaHarvX</h1>
+    <p>Data Protection & Privacy Policy</p>
+</header>
+
+<nav>
+    <a href="index.html">Overview</a>
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="privacy.html" class="active">Privacy Policy</a>
+</nav>
+
+<div class="container">
+
+    <!-- MANDATORY DEVELOPER NON-LIABILITY BANNER -->
+    <div class="developer-disclaimer-banner">
+        <h3>⚠️ Mandatory Legal & Developer Notice</h3>
+        <p>The independent developer who developed and deployed this application is not liable for any legal claims, damages, or compliance issues related to your use of the app. All legal and operational responsibilities, including compliance with applicable laws, rest exclusively with AquaHarvX (SIDDHIE ARUMUGAA TRADERS).</p>
+    </div>
+
+    <div class="card">
+        <span class="badge">Last Updated: October 2026</span>
+        <h1 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Privacy Policy</h1>
+
+        <p><strong>AquaHarvX</strong> is committed to protecting your personal information and privacy. This Privacy Policy details our data practices in full compliance with the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act, India)</strong>, Google Play Developer Policies, and applicable privacy regulations.</p>
+
+        <h2>1. Data Fiduciary & Developer Disclaimer</h2>
+        <p><strong>Data Fiduciary:</strong> Under the DPDP Act 2023, the sole Data Fiduciary responsible for deciding the purpose and means of processing personal data on AquaHarvX is <strong>SIDDHIE ARUMUGAA TRADERS</strong> ("AquaHarvX", "we", "us", or "our").</p>
+        <p><strong>Developer Non-Liability:</strong> The independent third-party software developers and deployment engineers who built and deployed this software application act solely as contracted technology providers and are NOT Data Fiduciaries or Data Processors under applicable law. The independent developers bear zero legal liability for data handling, compliance breaches, data storage, or user claims. All operational, statutory, and legal obligations rest exclusively with SIDDHIE ARUMUGAA TRADERS.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We collect only the minimum personal data strictly necessary to facilitate prawn marketplace transactions:</p>
+        <ul>
+            <li><strong>Phone Number:</strong> Your 10-digit mobile number, verified via One-Time Password (OTP) sent by SMS. Used as your primary account identifier and to enable direct calling between verified buyers and sellers.</li>
+            <li><strong>Personal Identity:</strong> Your full name and optional business/trader firm name, displayed on harvest listings or buyer offers to establish trading trust.</li>
+            <li><strong>Geographical & Farm Location:</strong> State, District, Mandal, and Village details. This is required because shrimp harvests and daily spot prices are geographically localized to ensure trade matching.</li>
+            <li><strong>Prawn Harvest & Trading Details:</strong> Prawn count sizes (20 Count to 400 Count), tonnage available/sought, and indicative offer prices.</li>
+            <li><strong>Technical & Diagnostic Data:</strong>
+                <ul>
+                    <li>Firebase Cloud Messaging (FCM) tokens to deliver transactional alerts and market updates;</li>
+                    <li>Firebase Crashlytics crash reports, error stack traces, and anonymous device diagnostics to fix software bugs.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>Your information is collected and processed for the following specified legitimate purposes:</p>
+        <ol>
+            <li><strong>Authentication & Security:</strong> To sign you in securely using passwordless SMS OTPs without storing passwords.</li>
+            <li><strong>Marketplace Listing & Matching:</strong> To display seller prawn harvest listings to interested buyers, and buyer "Offer More" quotes to farmers.</li>
+            <li><strong>Communication Between Traders:</strong> To allow sellers to contact prospective buyers directly via phone when interested in an offer.</li>
+            <li><strong>Notifications:</strong> To deliver alerts when market prices update, an offer is outbid, or an offer is about to expire.</li>
+            <li><strong>Regulatory & Legal Compliance:</strong> To comply with Indian statutory requirements, including electronic consent logging under the DPDP Act 2023.</li>
+        </ol>
+
+        <h2>4. Third-Party Service Providers</h2>
+        <p>We work with trusted industry-standard infrastructure providers who process data strictly under confidentiality agreements:</p>
+        <ul>
+            <li><strong>MSG91:</strong> For delivering transactional SMS OTPs and authentication codes to your mobile phone.</li>
+            <li><strong>Google Firebase:</strong> For real-time push notifications (Firebase Cloud Messaging) and stability crash reporting (Firebase Crashlytics).</li>
+            <li><strong>Cloud Infrastructure:</strong> Secure cloud application and database servers hosting backend APIs with encrypted storage.</li>
+        </ul>
+        <p>We do not sell, rent, monetize, or trade your personal data to any marketing or advertisement brokers.</p>
+
+        <h2>5. Data Security and Encryption</h2>
+        <p>We implement comprehensive security measures to safeguard your information:</p>
+        <ul>
+            <li>All network communications between the mobile app and server use HTTPS with Transport Layer Security (TLS 1.2+).</li>
+            <li>Authentication utilizes cryptographically signed JSON Web Tokens (JWT) with rate-limiting protection.</li>
+            <li>Access to backend databases is strictly restricted to authorized administrative personnel.</li>
+        </ul>
+
+        <h2>6. Account and Data Deletion Rights</h2>
+        <p>In accordance with Section 12 of the DPDP Act 2023 and Google Play requirements, you have the right to withdraw your consent and have your personal data permanently deleted.</p>
+        
+        <div class="highlight-box">
+            <h3 style="color: #065F46; font-size: 1.1rem; margin-bottom: 0.5rem;">How to Delete Your Account and Data</h3>
+            <p style="margin-bottom: 0.5rem; color: #047857;">You can delete your account at any time directly inside the AquaHarvX application:</p>
+            <ol style="margin-bottom: 0.5rem; color: #065F46;">
+                <li>Open the <strong>AquaHarvX</strong> app;</li>
+                <li>Tap on the <strong>Profile</strong> icon at the top-left of the Home screen;</li>
+                <li>Scroll down and select <strong>Delete Account</strong>;</li>
+                <li>Confirm deletion.</li>
+            </ol>
+            <p style="margin-bottom: 0; color: #047857;"><strong>What happens upon deletion:</strong> Your user profile, active listings, and live buyer offers will be immediately purged from our active systems. You may also request deletion by emailing our Grievance Officer at <a href="mailto:aquaharvx@gmail.com" style="color: #047857; font-weight: bold;">aquaharvx@gmail.com</a>.</p>
+        </div>
+
+        <h2>7. Children's Privacy</h2>
+        <p>AquaHarvX is strictly a commercial agricultural trade platform designed for adults aged 18 and older. We do not knowingly collect personal data from minors. If we discover that a minor under 18 has registered, their account will be promptly removed.</p>
+
+        <h2>8. Grievance Redressal and Contact Details</h2>
+        <p>In compliance with the Digital Personal Data Protection Act, 2023, if you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, you may reach our designated Grievance Officer:</p>
+        
+        <div class="contact-box">
+            <p><strong>Grievance Officer:</strong> AquaHarvX Data Protection Redressal</p>
+            <p><strong>Entity:</strong> SIDDHIE ARUMUGAA TRADERS</p>
+            <p>📧 Email: <a href="mailto:aquaharvx@gmail.com">aquaharvx@gmail.com</a></p>
+            <p>📞 Phone: <a href="tel:+919346122889">+91 9346122889</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 AquaHarvX (SIDDHIE ARUMUGAA TRADERS). All rights reserved.</p>
+    <p style="margin-top: 0.5rem;"><a href="terms.html">Terms & Conditions</a> &bull; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>

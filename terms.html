@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | AquaHarvX</title>
+    <style>
+        :root {
+            --primary: #0A2540;
+            --primary-light: #1E3A5F;
+            --accent: #00A389;
+            --accent-hover: #00826D;
+            --warning-bg: #FEF3C7;
+            --warning-border: #F59E0B;
+            --warning-text: #92400E;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            color: #CBD5E1;
+            font-size: 1rem;
+        }
+
+        nav {
+            background-color: white;
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #E2E8F0;
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Mandatory Developer Non-Liability Banner */
+        .developer-disclaimer-banner {
+            background-color: var(--warning-bg);
+            border-left: 6px solid var(--warning-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+        }
+
+        .developer-disclaimer-banner h3 {
+            color: var(--warning-text);
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .developer-disclaimer-banner p {
+            color: #78350F;
+            font-size: 1.05rem;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #F1F5F9;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p, ul, ol {
+            margin-bottom: 1rem;
+            color: #334155;
+            font-size: 1rem;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--primary);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #E6FFFA;
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.25rem 0.6rem;
+            border-radius: 9999px;
+            border: 1px solid #B2F5EA;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-box {
+            background-color: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            background-color: white;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            header h1 { font-size: 1.7rem; }
+            .card { padding: 1.5rem; }
+            nav { flex-wrap: wrap; gap: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AquaHarvX</h1>
+    <p>Prawn Harvest Marketplace & Trade Platform</p>
+</header>
+
+<nav>
+    <a href="index.html">Overview</a>
+    <a href="terms.html" class="active">Terms & Conditions</a>
+    <a href="privacy.html">Privacy Policy</a>
+</nav>
+
+<div class="container">
+
+    <!-- MANDATORY FIRST-LINE DEVELOPER NON-LIABILITY NOTICE -->
+    <div class="developer-disclaimer-banner">
+        <h3>⚠️ Mandatory Legal & Developer Notice</h3>
+        <p>The independent developer who developed and deployed this application is not liable for any legal claims, damages, or compliance issues related to your use of the app. All legal and operational responsibilities, including compliance with applicable laws, rest exclusively with AquaHarvX (SIDDHIE ARUMUGAA TRADERS).</p>
+    </div>
+
+    <div class="card">
+        <span class="badge">Last Updated: October 2026</span>
+        <h1 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Terms and Conditions & Terms of Service</h1>
+        
+        <p>Welcome to <strong>AquaHarvX</strong>. By downloading, accessing, browsing, or using the AquaHarvX mobile application or any associated service, you expressly acknowledge and agree to be bound by these Terms and Conditions ("Terms"). If you do not agree with any part of these Terms, you must immediately discontinue the use of this application.</p>
+
+        <h2>1. Parties and Platform Ownership</h2>
+        <p>The AquaHarvX application and platform are owned, operated, and managed exclusively by <strong>SIDDHIE ARUMUGAA TRADERS</strong> ("Company", "AquaHarvX", "we", "us", or "our"). Any commercial, legal, or administrative obligations regarding this service remain the sole responsibility of SIDDHIE ARUMUGAA TRADERS.</p>
+
+        <h2>2. Complete Third-Party Developer Non-Liability Clause</h2>
+        <p><strong>2.1 Non-Involvement in Operations:</strong> The independent software developer(s), contractors, engineers, and technical service providers who designed, authored, compiled, or deployed this software application operate strictly as independent technical service contractors. They do not own, operate, govern, broker, or control the marketplace, its operations, financial transactions, or user communications.</p>
+        <p><strong>2.2 Absolute Release of Liability:</strong> Under no circumstances shall the independent developer(s) or technical contractors be held liable for any claims, disputes, injuries, financial losses, regulatory non-compliance, legal proceedings, loss of profits, shrimp harvest loss, grading discrepancies, payment defaults, or incidental/consequential damages resulting from:</p>
+        <ul>
+            <li>Your use, inability to use, or reliance upon the AquaHarvX application;</li>
+            <li>Any technical error, server outage, glitch, calculation variance, or software malfunction;</li>
+            <li>Any transaction, deal, agreement, dispute, or negotiation conducted between buyers and sellers;</li>
+            <li>Any regulatory violation, licensing matter, tax dispute, or statutory compliance failure under Indian laws.</li>
+        </ul>
+        <p><strong>2.3 Sole Accountability:</strong> All statutory, legal, commercial, and operational liabilities rest exclusively with AquaHarvX (SIDDHIE ARUMUGAA TRADERS).</p>
+
+        <h2>3. Nature of the Platform (Intermediary Marketplace)</h2>
+        <p><strong>3.1 Discovery & Communication Only:</strong> AquaHarvX serves as a digital intermediary platform connecting shrimp/prawn farmers ("Sellers") with seafood buyers, traders, and exporters ("Buyers").</p>
+        <p><strong>3.2 Not a Party to Contracts:</strong> AquaHarvX is NOT an auctioneer, broker, buyer, seller, grading lab, or payment agent. We do not participate in, control, guarantee, or finalize contracts between users.</p>
+        <p><strong>3.3 Offline Negotiation & Finalization:</strong> All pricing agreements, shrimp count testing, pond sampling, weight determination, ice packing, transportation, and cash/bank payment settlements occur directly and independently between the Buyer and the Seller.</p>
+
+        <h2>4. User Registration & Eligibility</h2>
+        <ul>
+            <li><strong>Age Requirement:</strong> You must be at least 18 years of age to register or use this application.</li>
+            <li><strong>OTP Authentication:</strong> Registration requires a valid 10-digit Indian mobile phone number verified via One-Time Password (OTP). You are responsible for maintaining the confidentiality of your credentials.</li>
+            <li><strong>Accuracy of Information:</strong> You agree to provide accurate, truthful, and updated details regarding your identity, firm name, contact number, and farm or business location (State, District, Mandal, Village).</li>
+        </ul>
+
+        <h2>5. Market Prices and Listing Rules</h2>
+        <p><strong>5.1 Indicative Market Rates:</strong> Daily market prices displayed on the Home Board (for Set-A counts 20C through 170C, and Set-B buyer offer counts) are published as indicative reference quotes only. AquaHarvX makes no guarantee that any party will buy or sell at these specific rates.</p>
+        <p><strong>5.2 Farmer Listings:</strong> Sellers may publish harvest listings specifying count range, tonnage, and contact details. Misrepresenting pond quality, shrimp health, or availability is strictly prohibited.</p>
+        <p><strong>5.3 Buyer Offers:</strong> Buyers may place extra offers (₹0 or more above daily market prices for counts 20C–170C, or custom prices for counts 171C–400C). Placing an offer constitutes an expression of commercial interest and does not create an irrevocable purchase obligation on the platform.</p>
+
+        <h2>6. Harvest Testing, Quality & Payment Disclaimer</h2>
+        <p>AquaHarvX explicitly disclaims any responsibility for:</p>
+        <ul>
+            <li>The biological health, disease status, antibiotic residue, freshness, or grade of prawns/shrimp traded;</li>
+            <li>The calibration or accuracy of weighing scales, count sampling nets, or measuring equipment used at farm ponds;</li>
+            <li>Default, non-payment, delay, or dishonoring of payment commitments made by any buyer or seller;</li>
+            <li>Logistical delays, transport spoilage, ice melting, or harvesting labor disputes.</li>
+        </ul>
+        <p>Parties are strongly advised to execute their own independent quality inspections and secure payment assurances before handing over harvest stock.</p>
+
+        <h2>7. Prohibited Uses</h2>
+        <p>Users shall not:</p>
+        <ul>
+            <li>Post fraudulent, fictitious, or manipulative listings or offers;</li>
+            <li>Harvest or scrape user phone numbers, market data, or listings for spam, telemarketing, or competitive analysis;</li>
+            <li>Attempt to reverse-engineer, decompile, disrupt, or compromise the security of the application or backend servers;</li>
+            <li>Violate applicable local, state, or national laws of India, including agricultural and trade regulations.</li>
+        </ul>
+
+        <h2>8. Account Suspension and Termination</h2>
+        <p>AquaHarvX reserves the right, at its sole discretion, to suspend or terminate any user account without prior notice if fraudulent activity, abuse, fake listings, harassment, or breach of these Terms is detected.</p>
+
+        <h2>9. Intellectual Property</h2>
+        <p>All brand names, logos, software designs, UI assets, and content associated with AquaHarvX are the exclusive property of SIDDHIE ARUMUGAA TRADERS. Unauthorized reproduction is strictly prohibited.</p>
+
+        <h2>10. Indemnification</h2>
+        <p>You agree to defend, indemnify, and hold harmless AquaHarvX, SIDDHIE ARUMUGAA TRADERS, its proprietors, and its independent software developers/contractors against any claims, losses, liabilities, costs, or legal fees resulting from your use of the application, violation of these Terms, or any commercial transaction entered into with another user.</p>
+
+        <h2>11. Governing Law & Dispute Resolution</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of India. Any disputes arising out of or related to these Terms or the AquaHarvX platform shall be subject to the exclusive jurisdiction of the competent courts in the State where SIDDHIE ARUMUGAA TRADERS is registered.</p>
+
+        <h2>12. Contact and Grievances</h2>
+        <p>For any legal inquiries, operational queries, or grievances regarding these Terms of Service, please contact:</p>
+        <div class="contact-box">
+            <p><strong>AquaHarvX — SIDDHIE ARUMUGAA TRADERS</strong></p>
+            <p>📧 Email: <a href="mailto:aquaharvx@gmail.com">aquaharvx@gmail.com</a></p>
+            <p>📞 Phone: <a href="tel:+919346122889">+91 9346122889</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 AquaHarvX (SIDDHIE ARUMUGAA TRADERS). All rights reserved.</p>
+    <p style="margin-top: 0.5rem;"><a href="terms.html">Terms & Conditions</a> &bull; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
