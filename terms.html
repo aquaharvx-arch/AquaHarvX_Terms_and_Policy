@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions | AquaHarvX</title>
+    <title>Terms & Conditions | AquaHarvX</title>
+    <meta name="description" content="Platform Terms & Conditions, Commercial Trade Notice, Intermediary Mandate and Non-Custodial Connection Terms for AquaHarvX (Siddhie Arumugaa Traders).">
     <style>
         :root {
             --primary: #0A2540;
@@ -13,6 +14,9 @@
             --warning-bg: #FEF3C7;
             --warning-border: #F59E0B;
             --warning-text: #92400E;
+            --notice-bg: #EFF6FF;
+            --notice-border: #3B82F6;
+            --notice-text: #1E40AF;
             --text-main: #1E293B;
             --text-muted: #64748B;
             --bg-page: #F8FAFC;
@@ -37,7 +41,7 @@
         header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: white;
-            padding: 2.5rem 1.5rem;
+            padding: 2.75rem 1.5rem;
             text-align: center;
             box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
         }
@@ -52,6 +56,8 @@
         header p {
             color: #CBD5E1;
             font-size: 1rem;
+            max-width: 680px;
+            margin: 0 auto;
         }
 
         nav {
@@ -83,7 +89,7 @@
 
         .container {
             max-width: 920px;
-            margin: 2rem auto;
+            margin: 2.5rem auto;
             padding: 0 1.5rem;
         }
 
@@ -99,7 +105,7 @@
 
         .developer-disclaimer-banner h3 {
             color: var(--warning-text);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -116,6 +122,31 @@
             line-height: 1.6;
         }
 
+        /* Operational Model Notice */
+        .op-model-box {
+            background-color: var(--notice-bg);
+            border-left: 6px solid var(--notice-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .op-model-box h3 {
+            color: var(--notice-text);
+            font-size: 1.05rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .op-model-box p {
+            color: #1E3A8A;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
         .card {
             background-color: var(--bg-card);
             border: 1px solid var(--border);
@@ -125,9 +156,24 @@
             margin-bottom: 2.5rem;
         }
 
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .meta-strip span strong {
+            color: var(--primary);
+        }
+
         h2 {
             color: var(--primary);
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             font-weight: 700;
             margin-top: 2rem;
             margin-bottom: 0.75rem;
@@ -137,6 +183,14 @@
 
         h2:first-of-type {
             margin-top: 0;
+        }
+
+        h3.subsection-title {
+            color: var(--primary-light);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 1.25rem;
+            margin-bottom: 0.4rem;
         }
 
         p, ul, ol {
@@ -166,7 +220,30 @@
             padding: 0.25rem 0.6rem;
             border-radius: 9999px;
             border: 1px solid #B2F5EA;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #F8FAFC;
+            color: var(--primary);
+            font-weight: 700;
         }
 
         .contact-box {
@@ -175,6 +252,14 @@
             border-radius: 8px;
             padding: 1.25rem;
             margin-top: 1.5rem;
+        }
+
+        .contact-box p {
+            margin-bottom: 0.4rem;
+        }
+
+        .contact-box p:last-child {
+            margin-bottom: 0;
         }
 
         footer {
@@ -203,7 +288,7 @@
 
 <header>
     <h1>AquaHarvX</h1>
-    <p>Prawn Harvest Marketplace & Trade Platform</p>
+    <p>Platform Terms & Conditions &bull; Intermediary Mandate &bull; Non-Custodial Connection Terms</p>
 </header>
 
 <nav>
@@ -214,93 +299,119 @@
 
 <div class="container">
 
-    <!-- MANDATORY FIRST-LINE DEVELOPER NON-LIABILITY NOTICE -->
+    <!-- MANDATORY DEVELOPER NON-LIABILITY BANNER (EXACT REQUIRED CLAUSE) -->
     <div class="developer-disclaimer-banner">
         <h3>⚠️ Mandatory Legal & Developer Notice</h3>
         <p>The independent developer who developed and deployed this application is not liable for any legal claims, damages, or compliance issues related to your use of the app. All legal and operational responsibilities, including compliance with applicable laws, rest exclusively with AquaHarvX (SIDDHIE ARUMUGAA TRADERS).</p>
     </div>
 
+    <!-- OPERATIONAL MODEL NOTICE -->
+    <div class="op-model-box">
+        <h3>Operational Model Notice</h3>
+        <p>AquaHarvX is a communication and discovery tool operated by <strong>Siddhie Arumugaa Traders ("SAT")</strong>. SAT publishes its daily spot purchase rates on the platform. Third-party buyers post procurement offers matching or exceeding SAT rates. Sellers (farmers) compare rates and connect directly with buyers or SAT via phone. AquaHarvX holds zero funds and processes zero trade transactions.</p>
+    </div>
+
     <div class="card">
-        <span class="badge">Last Updated: October 2026</span>
-        <h1 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Terms and Conditions & Terms of Service</h1>
+        <span class="badge">Master Legal Policy</span>
+        <h1 style="font-size: 1.8rem; color: var(--primary); margin-bottom: 0.5rem;">Platform Terms & Conditions</h1>
         
-        <p>Welcome to <strong>AquaHarvX</strong>. By downloading, accessing, browsing, or using the AquaHarvX mobile application or any associated service, you expressly acknowledge and agree to be bound by these Terms and Conditions ("Terms"). If you do not agree with any part of these Terms, you must immediately discontinue the use of this application.</p>
-
-        <h2>1. Parties and Platform Ownership</h2>
-        <p>The AquaHarvX application and platform are owned, operated, and managed exclusively by <strong>SIDDHIE ARUMUGAA TRADERS</strong> ("Company", "AquaHarvX", "we", "us", or "our"). Any commercial, legal, or administrative obligations regarding this service remain the sole responsibility of SIDDHIE ARUMUGAA TRADERS.</p>
-
-        <h2>2. Complete Third-Party Developer Non-Liability Clause</h2>
-        <p><strong>2.1 Non-Involvement in Operations:</strong> The independent software developer(s), contractors, engineers, and technical service providers who designed, authored, compiled, or deployed this software application operate strictly as independent technical service contractors. They do not own, operate, govern, broker, or control the marketplace, its operations, financial transactions, or user communications.</p>
-        <p><strong>2.2 Absolute Release of Liability:</strong> Under no circumstances shall the independent developer(s) or technical contractors be held liable for any claims, disputes, injuries, financial losses, regulatory non-compliance, legal proceedings, loss of profits, shrimp harvest loss, grading discrepancies, payment defaults, or incidental/consequential damages resulting from:</p>
-        <ul>
-            <li>Your use, inability to use, or reliance upon the AquaHarvX application;</li>
-            <li>Any technical error, server outage, glitch, calculation variance, or software malfunction;</li>
-            <li>Any transaction, deal, agreement, dispute, or negotiation conducted between buyers and sellers;</li>
-            <li>Any regulatory violation, licensing matter, tax dispute, or statutory compliance failure under Indian laws.</li>
-        </ul>
-        <p><strong>2.3 Sole Accountability:</strong> All statutory, legal, commercial, and operational liabilities rest exclusively with AquaHarvX (SIDDHIE ARUMUGAA TRADERS).</p>
-
-        <h2>3. Nature of the Platform (Intermediary Marketplace)</h2>
-        <p><strong>3.1 Discovery & Communication Only:</strong> AquaHarvX serves as a digital intermediary platform connecting shrimp/prawn farmers ("Sellers") with seafood buyers, traders, and exporters ("Buyers").</p>
-        <p><strong>3.2 Not a Party to Contracts:</strong> AquaHarvX is NOT an auctioneer, broker, buyer, seller, grading lab, or payment agent. We do not participate in, control, guarantee, or finalize contracts between users.</p>
-        <p><strong>3.3 Offline Negotiation & Finalization:</strong> All pricing agreements, shrimp count testing, pond sampling, weight determination, ice packing, transportation, and cash/bank payment settlements occur directly and independently between the Buyer and the Seller.</p>
-
-        <h2>4. User Registration & Eligibility</h2>
-        <ul>
-            <li><strong>Age Requirement:</strong> You must be at least 18 years of age to register or use this application.</li>
-            <li><strong>OTP Authentication:</strong> Registration requires a valid 10-digit Indian mobile phone number verified via One-Time Password (OTP). You are responsible for maintaining the confidentiality of your credentials.</li>
-            <li><strong>Accuracy of Information:</strong> You agree to provide accurate, truthful, and updated details regarding your identity, firm name, contact number, and farm or business location (State, District, Mandal, Village).</li>
-        </ul>
-
-        <h2>5. Market Prices and Listing Rules</h2>
-        <p><strong>5.1 Indicative Market Rates:</strong> Daily market prices displayed on the Home Board (for Set-A counts 20C through 170C, and Set-B buyer offer counts) are published as indicative reference quotes only. AquaHarvX makes no guarantee that any party will buy or sell at these specific rates.</p>
-        <p><strong>5.2 Farmer Listings:</strong> Sellers may publish harvest listings specifying count range, tonnage, and contact details. Misrepresenting pond quality, shrimp health, or availability is strictly prohibited.</p>
-        <p><strong>5.3 Buyer Offers:</strong> Buyers may place extra offers (₹0 or more above daily market prices for counts 20C–170C, or custom prices for counts 171C–400C). Placing an offer constitutes an expression of commercial interest and does not create an irrevocable purchase obligation on the platform.</p>
-
-        <h2>6. Harvest Testing, Quality & Payment Disclaimer</h2>
-        <p>AquaHarvX explicitly disclaims any responsibility for:</p>
-        <ul>
-            <li>The biological health, disease status, antibiotic residue, freshness, or grade of prawns/shrimp traded;</li>
-            <li>The calibration or accuracy of weighing scales, count sampling nets, or measuring equipment used at farm ponds;</li>
-            <li>Default, non-payment, delay, or dishonoring of payment commitments made by any buyer or seller;</li>
-            <li>Logistical delays, transport spoilage, ice melting, or harvesting labor disputes.</li>
-        </ul>
-        <p>Parties are strongly advised to execute their own independent quality inspections and secure payment assurances before handing over harvest stock.</p>
-
-        <h2>7. Prohibited Uses</h2>
-        <p>Users shall not:</p>
-        <ul>
-            <li>Post fraudulent, fictitious, or manipulative listings or offers;</li>
-            <li>Harvest or scrape user phone numbers, market data, or listings for spam, telemarketing, or competitive analysis;</li>
-            <li>Attempt to reverse-engineer, decompile, disrupt, or compromise the security of the application or backend servers;</li>
-            <li>Violate applicable local, state, or national laws of India, including agricultural and trade regulations.</li>
-        </ul>
-
-        <h2>8. Account Suspension and Termination</h2>
-        <p>AquaHarvX reserves the right, at its sole discretion, to suspend or terminate any user account without prior notice if fraudulent activity, abuse, fake listings, harassment, or breach of these Terms is detected.</p>
-
-        <h2>9. Intellectual Property</h2>
-        <p>All brand names, logos, software designs, UI assets, and content associated with AquaHarvX are the exclusive property of SIDDHIE ARUMUGAA TRADERS. Unauthorized reproduction is strictly prohibited.</p>
-
-        <h2>10. Indemnification</h2>
-        <p>You agree to defend, indemnify, and hold harmless AquaHarvX, SIDDHIE ARUMUGAA TRADERS, its proprietors, and its independent software developers/contractors against any claims, losses, liabilities, costs, or legal fees resulting from your use of the application, violation of these Terms, or any commercial transaction entered into with another user.</p>
-
-        <h2>11. Governing Law & Dispute Resolution</h2>
-        <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of India. Any disputes arising out of or related to these Terms or the AquaHarvX platform shall be subject to the exclusive jurisdiction of the competent courts in the State where SIDDHIE ARUMUGAA TRADERS is registered.</p>
-
-        <h2>12. Contact and Grievances</h2>
-        <p>For any legal inquiries, operational queries, or grievances regarding these Terms of Service, please contact:</p>
-        <div class="contact-box">
-            <p><strong>AquaHarvX — SIDDHIE ARUMUGAA TRADERS</strong></p>
-            <p>📧 Email: <a href="mailto:aquaharvx@gmail.com">aquaharvx@gmail.com</a></p>
-            <p>📞 Phone: <a href="tel:+919346122889">+91 9346122889</a></p>
+        <div class="meta-strip">
+            <span><strong>Operator:</strong> Siddhie Arumugaa Traders</span>
+            <span><strong>Jurisdiction:</strong> Andhra Pradesh, India</span>
+            <span><strong>Effective Date:</strong> October 2026</span>
         </div>
+
+        <p>Welcome to <strong>AquaHarvX</strong>. By downloading, accessing, browsing, or using the AquaHarvX mobile application or any associated service, you expressly acknowledge and agree to be bound by these Terms and Conditions ("Terms"). If you do not agree with any part of these Terms, you must immediately discontinue use of the application.</p>
+
+        <h2>1. Intermediary Status & Direct-Connection Model (IT Act § 79)</h2>
+        <p><strong>1.1. Discovery Directory Only:</strong> AquaHarvX (the "Platform") is owned and operated by Siddhie Arumugaa Traders ("SAT", "Firm", "We", "Us"), a sole proprietorship based in Andhra Pradesh, India. The Platform functions strictly as a technology-enabled telecommunications directory facilitating peer-to-peer discovery between independent shrimp farmers ("Sellers"), third-party wholesale procurement agents/factories ("Third-Party Buyers"), and SAT.</p>
+        <p><strong>1.2. Complete Non-Involvement in Settlements:</strong> AquaHarvX does not operate, manage, handle, or facilitate any monetary payments, financial escrow, clearing-house operations, or financial custody. Sellers and Buyers communicate directly through standard telephonic channels. All trade negotiations, quantity weighing, quality validation, pond-side sampling, vehicle transit, and payments take place entirely offline between parties at their own sole risk.</p>
+        <p><strong>1.3. Section 79 Safe Harbor:</strong> The Platform qualifies as an "Intermediary" under Section 2(1)(w) of the Information Technology Act, 2000. Under Section 79 of the IT Act and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, the Firm is not responsible for any communications, listings, quotes, or transactions conducted between users.</p>
+
+        <h2>2. Dual Pricing Architecture (SAT Rates & Third-Party Bids)</h2>
+        <p><strong>2.1. SAT Benchmark Quotes:</strong> Prices displayed under "SAT Prices" or "SAT (₹/kg)" represent independent spot procurement price quotes offered directly by Siddhie Arumugaa Traders for its own commercial operations. They do not represent official government indicators, statutory benchmark rates, or collective industry price-fixing schedules.</p>
+        <p><strong>2.2. Third-Party Buyer Offers:</strong> Independent buyers may list procurement offers that equal or exceed the SAT base quote (expressed as "+₹/kg"). AquaHarvX does not verify, guarantee, or underwrite the solvency, genuine commercial intent, or liquidity of any third-party buyer posting offers on the Platform.</p>
+        <p><strong>2.3. Pond-Gate Verification:</strong> All posted prices and buyer bids represent indicative reference quotes. Final settlement rates depend strictly on mutual on-site pond sampling, nominal vs. tare count adjustments, soft-shell dockage deductions, freshness assessment, and weighbridge verification agreed upon by buyer and seller.</p>
+
+        <h2>3. User Conduct, UGC Guidelines & Anti-Circumvention</h2>
+        <p><strong>3.1. User Generated Content (UGC):</strong> In compliance with Rule 3(1)(b) of the IT Rules 2021 and App Store / Google Play Developer Guidelines, users shall not post listings that: (a) misrepresent harvest volumes or farm ownership; (b) quote non-existent or malicious bids; (c) publish invalid or unauthorized phone numbers; or (d) violate aquaculture health regulations.</p>
+        <p><strong>3.2. Public Reference Number (PRN):</strong> User identity is indexed by a Public Reference Number ("PRN") to preserve privacy. Users agree not to scrape, manipulate, impersonate, or misuse PRN identifiers to engage in predatory off-platform spam or fraudulent broker schemes.</p>
+
+        <h2>4. UGC Safety: Reporting, Blocking & Takedown Procedure</h2>
+        <p><strong>4.1. Mandatory In-App Reporting:</strong> To maintain community integrity and satisfy Google Play UGC mandates, AquaHarvX provides direct reporting tools: (i) via the contextual three-dot (⋮) menu on each buyer offer or seller harvest card; and (ii) through the dedicated "Report User & Issue" form inside the user profile drawer.</p>
+        <p><strong>4.2. Instant Blocking:</strong> Reporting users can choose to immediately block any user PRN. When blocked, the offending party's listings and offers are instantly hidden from the reporting user's application feed.</p>
+        <p><strong>4.3. Administrative Investigation & Takedown:</strong> In strict observance of Rule 3(2) of the IT Rules 2021, the Platform reviews reported listings and reserves full discretion to deactivate listings, issue warnings, or permanently ban PRN accounts within 24 to 36 hours of verifying fraudulent bids, non-existent inventory, or reported trade defaults.</p>
+
+        <h2>5. Absolute Exclusion of Trade & Financial Liability</h2>
+        <p><strong>5.1. No Trade Warranty:</strong> Siddhie Arumugaa Traders and AquaHarvX expressly disclaim any warranty regarding: (a) biological stock condition, microbial contamination (including WSSV, EHP, or antibiotic residues); (b) actual delivery or receipt of shrimp biomass; and (c) prompt or complete payment by any buyer.</p>
+        <p><strong>5.2. Payment Default Indemnity:</strong> Under no circumstances shall Siddhie Arumugaa Traders, its proprietor, or platform developers be held liable for payment dishonor, banking delays, bounced cheques, cash non-payment, unadjusted dockage disputes, or pond mortality occurring after contact initiation on AquaHarvX.</p>
+        <p><strong>5.3. Independent Due Diligence:</strong> Farmers and buyers are solely responsible for conducting their own verification of identity, creditworthiness, and weighing protocols before releasing or loading stock.</p>
+
+        <h2>6. Current Free Tier & Future Subscription Services</h2>
+        <p><strong>6.1. Current Free Status:</strong> AquaHarvX is currently deployed entirely free of charge. Users may browse SAT prices, post harvest batches, submit premium buyer offers, and access direct telephonic connection without payment of subscription or platform fees.</p>
+        <p><strong>6.2. Future Monetization Notice:</strong> The Firm reserves the unilateral right to introduce optional subscription packages, daily call quotas, premium buyer verification badges, or lead discovery tiers in future updates. Any such paid services will be clearly announced within the app prior to enforcement.</p>
+        <p><strong>6.3. Nature of Future Subscriptions:</strong> Future subscription fees represent intangible software connection services only. Subscription purchase shall not be construed as a guarantee of closed procurement deals, inventory availability, or guaranteed sale. Applicable statutory Goods and Services Tax (GST under SAC 998315) will apply upon activation of paid features.</p>
+
+        <h2>7. Account Deletion & Right to Erasure (App Store Compliance)</h2>
+        <p><strong>7.1. In-App Deletion:</strong> Pursuant to Google Play Store User Data Policy and Apple App Store Review Guideline 5.1.1(v), users possess the right to permanently delete their account and associated profile data directly inside the application via <strong>My Profile &gt; Delete Account &amp; Data</strong>.</p>
+        <p><strong>7.2. Processing &amp; Purge:</strong> Upon confirmation of deletion, public listings, active offers, and user identifiers will be permanently removed from public view across the Platform.</p>
+
+        <h2>8. Statutory Data Retention & Law Enforcement Cooperation</h2>
+        <p><strong>8.1. Mandatory 180-Day Rule:</strong> In strict adherence to Rule 3(1)(h) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, basic user registration records, authentication logs, and communication audit trails must be securely retained for a minimum period of 180 days following account deletion or cancellation.</p>
+        <p><strong>8.2. Regulatory Cooperation:</strong> The Firm complies with lawful orders from authorized Indian judicial and law enforcement bodies (including notices under CrPC / BNSS) investigating fraud, commercial cheating, or illicit trade practices.</p>
+
+        <h2>9. Grievance Redressal Mechanism & Nodal Desk (Rule 3)</h2>
+        <p>Any user complaint, grievance regarding content infringement, or notice of trade impersonation must be formally submitted to our designated Grievance Officer:</p>
+        
+        <div class="contact-box">
+            <p><strong>Grievance Officer:</strong> Grievance Redressal Officer, AquaHarvX Desk</p>
+            <p><strong>Operating Entity:</strong> Siddhie Arumugaa Traders (Sole Proprietorship)</p>
+            <p><strong>Official Email:</strong> <a href="mailto:grievance@aquaharvx.in">grievance@aquaharvx.in</a> &bull; <a href="mailto:support@aquaharvx.in">support@aquaharvx.in</a> &bull; <a href="mailto:aquaharvx@gmail.com">aquaharvx@gmail.com</a></p>
+            <p><strong>Physical Address:</strong> Siddhie Arumugaa Traders, Attili, West Godavari District, Andhra Pradesh, PIN: 534134, India</p>
+            <p><strong>Resolution Protocol:</strong> Acknowledgment within 24 hours; formal disposal within 15 days.</p>
+        </div>
+
+        <h2>10. Summary Guide for App Features & Compliance</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>App Screen</th>
+                        <th>User &amp; System Action</th>
+                        <th>Store Policy Requirement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Registration</strong></td>
+                        <td>Displays clickable link: <em>"By generating OTP, you agree to Terms &amp; Privacy"</em> pointing to hosted legal URLs.</td>
+                        <td>Google Play &amp; App Store Explicit Consent Mandate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Harvest &amp; Offer Cards</strong></td>
+                        <td>Provides contextual menu (⋮) to <em>Report Listing</em> and <em>Block User</em> with pre-populated PRN.</td>
+                        <td>Google Play User Generated Content (UGC) Policy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>My Profile</strong></td>
+                        <td>Permanent navigation items: (1) Terms &amp; Privacy Policy; (2) Report an Issue; (3) Delete Account &amp; Data.</td>
+                        <td>Google Play Account Deletion Mandate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Home Rate Board</strong></td>
+                        <td>Title displayed as <em>SAT Prices</em>, column header as <em>SAT (₹/kg)</em> with pond sampling footnotes.</td>
+                        <td>Intermediary Protection &amp; Regulatory Safe Harbor</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 AquaHarvX (SIDDHIE ARUMUGAA TRADERS). All rights reserved.</p>
-    <p style="margin-top: 0.5rem;"><a href="terms.html">Terms & Conditions</a> &bull; <a href="privacy.html">Privacy Policy</a></p>
+    <p>&copy; 2026 AquaHarvX &bull; Siddhie Arumugaa Traders. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;"><a href="terms.html">Terms & Conditions</a> &bull; <a href="privacy.html">Privacy Policy</a> &bull; <a href="index.html">Overview</a></p>
 </footer>
 
 </body>

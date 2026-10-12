@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal & Compliance Portal | AquaHarvX</title>
+    <title>AquaHarvX | Legal & Compliance Portal</title>
+    <meta name="description" content="Official Legal, Compliance & Privacy Portal for AquaHarvX — Operated by Siddhie Arumugaa Traders.">
     <style>
         :root {
             --primary: #0A2540;
@@ -13,6 +14,9 @@
             --warning-bg: #FEF3C7;
             --warning-border: #F59E0B;
             --warning-text: #92400E;
+            --notice-bg: #EFF6FF;
+            --notice-border: #3B82F6;
+            --notice-text: #1E40AF;
             --text-main: #1E293B;
             --text-muted: #64748B;
             --bg-page: #F8FAFC;
@@ -101,7 +105,7 @@
 
         .developer-disclaimer-banner h3 {
             color: var(--warning-text);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -116,6 +120,31 @@
             font-size: 1.05rem;
             font-weight: 600;
             line-height: 1.6;
+        }
+
+        /* Operational Model Notice */
+        .op-model-box {
+            background-color: var(--notice-bg);
+            border-left: 6px solid var(--notice-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .op-model-box h3 {
+            color: var(--notice-text);
+            font-size: 1.05rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .op-model-box p {
+            color: #1E3A8A;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
         }
 
         .grid {
@@ -138,24 +167,19 @@
         }
 
         .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-icon {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
         }
 
         .card h2 {
-            color: var(--primary);
             font-size: 1.35rem;
             font-weight: 700;
+            color: var(--primary);
             margin-bottom: 0.75rem;
         }
 
         .card p {
-            color: #475569;
+            color: var(--text-muted);
             font-size: 0.95rem;
             margin-bottom: 1.5rem;
             flex-grow: 1;
@@ -163,37 +187,52 @@
 
         .btn {
             display: inline-block;
-            background-color: var(--accent);
-            color: white;
-            text-decoration: none;
-            padding: 0.75rem 1.25rem;
-            border-radius: 8px;
-            font-weight: 700;
             text-align: center;
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
             transition: background-color 0.2s ease;
         }
 
         .btn:hover {
+            background-color: var(--primary-light);
+        }
+
+        .btn-accent {
+            background-color: var(--accent);
+        }
+
+        .btn-accent:hover {
             background-color: var(--accent-hover);
         }
 
-        .btn-outline {
-            background-color: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--primary);
-            color: white;
-        }
-
-        .contact-card {
-            background-color: white;
+        .info-card {
+            background-color: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .info-card h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-card ul {
+            padding-left: 1.25rem;
+            color: #334155;
+            font-size: 0.95rem;
+        }
+
+        .info-card li {
+            margin-bottom: 0.5rem;
         }
 
         footer {
@@ -210,13 +249,19 @@
             color: var(--accent);
             text-decoration: none;
         }
+
+        @media (max-width: 640px) {
+            header h1 { font-size: 1.8rem; }
+            .grid { grid-template-columns: 1fr; }
+            nav { flex-wrap: wrap; gap: 0.75rem; }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>AquaHarvX</h1>
-    <p>Official Legal, Privacy & Compliance Information</p>
+    <p>Official Legal &amp; Compliance Portal &bull; Siddhie Arumugaa Traders</p>
 </header>
 
 <nav>
@@ -227,45 +272,54 @@
 
 <div class="container">
 
-    <!-- MANDATORY DEVELOPER NON-LIABILITY BANNER -->
+    <!-- MANDATORY DEVELOPER NON-LIABILITY BANNER (EXACT REQUIRED CLAUSE) -->
     <div class="developer-disclaimer-banner">
         <h3>⚠️ Mandatory Legal & Developer Notice</h3>
         <p>The independent developer who developed and deployed this application is not liable for any legal claims, damages, or compliance issues related to your use of the app. All legal and operational responsibilities, including compliance with applicable laws, rest exclusively with AquaHarvX (SIDDHIE ARUMUGAA TRADERS).</p>
     </div>
 
+    <!-- OPERATIONAL MODEL NOTICE -->
+    <div class="op-model-box">
+        <h3>Operational Model Notice</h3>
+        <p>AquaHarvX is a communication and discovery tool operated by <strong>Siddhie Arumugaa Traders ("SAT")</strong>. SAT publishes its daily spot purchase rates on the platform. Third-party buyers post procurement offers matching or exceeding SAT rates. Sellers (farmers) compare rates and connect directly with buyers or SAT via phone. AquaHarvX holds zero funds and processes zero trade transactions.</p>
+    </div>
+
     <div class="grid">
         <div class="card">
             <div>
-                <div class="card-icon">📜</div>
-                <h2>Terms and Conditions</h2>
-                <p>Read the Terms of Service governing the use of AquaHarvX, trade listings, buyer offers, market pricing reference, and platform intermediary disclaimers.</p>
+                <h2>📜 Terms & Conditions</h2>
+                <p>Commercial Trade Notice, Intermediary Mandate under IT Act § 79, Dual Pricing Architecture (SAT Benchmark Rates &amp; Third-Party Bids), UGC Safety, Account Deletion, and Absolute Trade Liability Exclusions.</p>
             </div>
-            <a href="terms.html" class="btn">View Terms & Conditions &rarr;</a>
+            <a href="terms.html" class="btn">Read Terms of Service &rarr;</a>
         </div>
 
         <div class="card">
             <div>
-                <div class="card-icon">🛡️</div>
-                <h2>Privacy Policy</h2>
-                <p>Learn how AquaHarvX handles your data in compliance with the Digital Personal Data Protection Act, 2023 (DPDP Act) and Google Play Store Developer Policies.</p>
+                <h2>🔒 Privacy Policy</h2>
+                <p>Comprehensive data protection disclosure under the Digital Personal Data Protection Act, 2023 (DPDP Act, India). Details PRN Anonymization, Telecommunications Bridge, Non-Sale of Data guarantee, and In-App Account Deletion.</p>
             </div>
-            <a href="privacy.html" class="btn">View Privacy Policy &rarr;</a>
+            <a href="privacy.html" class="btn btn-accent">Read Privacy Policy &rarr;</a>
         </div>
     </div>
 
-    <div class="contact-card">
-        <h2 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 0.75rem;">🏢 Platform Ownership & Contact Details</h2>
-        <p style="color: #475569; margin-bottom: 1rem;">AquaHarvX is owned, managed, and operated exclusively by <strong>SIDDHIE ARUMUGAA TRADERS</strong>.</p>
-        <p><strong>Grievance Officer:</strong> AquaHarvX Grievance Redressal</p>
-        <p>📧 Email: <a href="mailto:aquaharvx@gmail.com" style="color: var(--accent); font-weight: 600;">aquaharvx@gmail.com</a></p>
-        <p>📞 Phone: <a href="tel:+919346122889" style="color: var(--accent); font-weight: 600;">+91 9346122889</a></p>
+    <div class="info-card">
+        <h3>🏛️ Business Entity & Governance Details</h3>
+        <ul>
+            <li><strong>Operating Firm:</strong> Siddhie Arumugaa Traders (Sole Proprietorship)</li>
+            <li><strong>Operating Brand:</strong> AquaHarvX</li>
+            <li><strong>Jurisdiction:</strong> Andhra Pradesh, India</li>
+            <li><strong>Intermediary Safe Harbor:</strong> Section 79 of the Information Technology Act, 2000 &amp; IT Rules 2021</li>
+            <li><strong>Grievance Redressal Officer:</strong> Grievance Redressal Officer, AquaHarvX Desk</li>
+            <li><strong>Official Emails:</strong> <a href="mailto:support@aquaharvx.in">support@aquaharvx.in</a> &bull; <a href="mailto:grievance@aquaharvx.in">grievance@aquaharvx.in</a> &bull; <a href="mailto:aquaharvx@gmail.com">aquaharvx@gmail.com</a></li>
+            <li><strong>Registered Address:</strong> Siddhie Arumugaa Traders, Attili, West Godavari District, Andhra Pradesh, PIN: 534134, India</li>
+        </ul>
     </div>
 
 </div>
 
 <footer>
-    <p>&copy; 2026 AquaHarvX (SIDDHIE ARUMUGAA TRADERS). All rights reserved.</p>
-    <p style="margin-top: 0.5rem;"><a href="terms.html">Terms & Conditions</a> &bull; <a href="privacy.html">Privacy Policy</a></p>
+    <p>&copy; 2026 AquaHarvX &bull; Siddhie Arumugaa Traders. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;"><a href="terms.html">Terms & Conditions</a> &bull; <a href="privacy.html">Privacy Policy</a> &bull; <a href="index.html">Overview</a></p>
 </footer>
 
 </body>
